@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}
+ Home
+{% endblock %}
+{% block body %}
+<form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+    <div class="image-upload">
+        <input type="file" name="file" id="logo" onchange="fileValue(this)" required>
+        <label for="logo" class="upload-field" id="file-label">
+            <div class="file-thumbnail">
+                <img id="image-preview" src="https://www.btklsby.go.id/images/placeholder/basic.png" alt="">
+                <h3 id="filename">
+                    Drag and Drop
+                </h3>
+                <p >Supports JPG, PNG, SVG</p>
+            </div>
+        </label>
+    </div>
+    <div class="text-center">
+        <input class="btn btn-outline-dark" 
+               style="width: 50%; margin: auto;margin-top: 20px;border-color: lightgray;" 
+               type = "submit" placeholder="Upload"
+        />
+    </div>
+</form>   
+
+{% endblock %}
