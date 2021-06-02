@@ -1,0 +1,51 @@
+body{
+    background-color: #F5F6FB;
+}
+.image-upload{
+   position: relative;
+   max-width: 50%;
+   max-height: 50%;
+    margin: 0 auto;
+   overflow: hidden;
+   margin-top: 100px;
+}
+.image-upload input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.upload-field {
+  display: block;
+  background: #fff;
+  padding: 12px;
+  border-radius: 11px;
+
+}
+
+.upload-field .file-thumbnail {
+  cursor: pointer;
+  border: 1px dashed #BBD9EC;
+  border-radius: 11px;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-field .file-thumbnail img {
+  width: 50px;
+}
+
+.upload-field .file-thumbnail h3 {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.upload-field .file-thumbnail p {
+  font-size: 12px;
+  color: #9ABCD1;
+  margin-bottom: 0;
+}
