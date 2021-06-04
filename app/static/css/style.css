@@ -49,3 +49,25 @@ body{
   color: #9ABCD1;
   margin-bottom: 0;
 }
+.head h3{
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.bg-primary {
+  color: #757575;
+  font-size: 14px;
+  border: 1px solid #eee!important;
+  background-color: #fafafa!important;
+  padding: 8px;
+}
+
+.grouping {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}

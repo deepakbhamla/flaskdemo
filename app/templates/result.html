@@ -1,9 +1,28 @@
 {% extends "base.html" %}
 {% block title %}
- Home
+ Extracted Resume
 {% endblock %}
 {% block body %}
+ {% if data %}
+  
    <div class="" style="width: 50%;margin: auto;margin-top:50px ; border: 1px solid #fafafa;color: #333; background-color: #fff;padding: 20px;border-radius: 10px;">
-     {{data}}
+     <div class="head">
+        <h3>Extractrd Data From Resume</h3>
+     </div>
+     {% for key, value in data.items() %}
+     <div>
+      <ul class="list-group" style="font-size: 18px;">
+        <li class=" d-flex align-items-center grouping" style="border-bottom: 1px solid rgba(0,0,0,.125)!important;">
+          <span style="width: 25%;">{{key}}</span>
+          <div  style="width: 75%;">
+            <span class="badge bg-primary rounded-pill">{{value | truncate(80)}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    {% endfor %}
    </div>
+  {% else %}
+     <p style="text-align: center;">no data</p>
+  {% endif %} 
 {% endblock %}
